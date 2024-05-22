@@ -1,0 +1,15 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+    <h1>Admin Dashboard</h1>
+    <ul>
+        <li><a href="{{ url_for('admin.delete_post', post_id=1) }}">Delete News Item 1</a></li>
+        <li><a href="{{ url_for('admin.delete_post', post_id=2) }}">Delete News Item 2</a></li>
+        <!-- Add more links for other news items -->
+    </ul>
+    <ul>
+        <li><a href="{{ url_for('admin.delete_user', user_id=1) }}">Delete User 1</a></li>
+        <li><a href="{{ url_for('admin.delete_user', user_id=2) }}">Delete User 2</a></li>
+        <!-- Add more links for other users -->
+    </ul>
+{% endblock %}
